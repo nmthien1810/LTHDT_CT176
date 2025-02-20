@@ -27,6 +27,7 @@ public class Date {
         System.out.println(day + "/" + month + "/" + year);
     }
 
+    @Override
     public String toString() {
         return day + "-" + month + "-" + year;
     }
