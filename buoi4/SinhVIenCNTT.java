@@ -26,6 +26,18 @@ public class SinhVienCNTT extends SinhVien {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap tai khoan: ");
         taikhoan = sc.nextLine();
-        
+        matkhau = sc.nextLine();
+    }
+
+    public String toString(String taikhoan, String matkhau, String email) {
+        return super.toString() + "/ " + taikhoan + "/ " + matkhau + "/ " + email;
+    }
+
+    public void doiMatKhau(String newpass) {
+        this.matkhau = newpass;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
