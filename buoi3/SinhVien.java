@@ -115,8 +115,12 @@ public class SinhVien implements Comparable<SinhVien> {
         }
     }
 
-    public int soLuongHocPhan() {
-        return soLuongHocPhan;
+    public String ketQua() {
+        String s = "";
+        for (int i = 0; i < soLuongHocPhan; i++) {
+            s += tenHocPhan[i] + " - " + diemHocPhan[i] + "\n";
+        }
+        return s;
     }
 
     @Override

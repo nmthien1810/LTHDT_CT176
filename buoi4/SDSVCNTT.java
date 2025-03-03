@@ -17,12 +17,11 @@ public class SDSVCNTT {
         System.out.println("Nhap email de tim tai khoan: ");
         sc.nextLine();
         String email = sc.nextLine();
-        SinhVienCNTT A;
+        System.out.println("Tai khoan va ket qua cua sinh vien co email " + email + " la: ");
         for (int i = 0; i < n; i++) {
             if (sv[i].getEmail().equals(email)) {
-                A = sv[i];
-                System.out.println(A.getTaiKhoan());
-                
+                System.out.println(sv[i].getTaiKhoan());
+                System.out.println(sv[i].ketQua());
             }
         }
     }

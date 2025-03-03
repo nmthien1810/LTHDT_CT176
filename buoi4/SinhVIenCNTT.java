@@ -47,12 +47,4 @@ public class SinhVienCNTT extends SinhVien {
     public String getEmail() {
         return email;
     }
-
-    public String ketQua(String[] tenHP, String[] diemHP) {
-        String s = "";
-        for (int i = 0; i < soLuongHocPhan(); i++) {
-            s += tenHP[i] + " - " + diemHP[i] + "\n";
-        }
-        return s;
-    }
 }
