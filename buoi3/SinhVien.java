@@ -11,8 +11,8 @@ public class SinhVien implements Comparable<SinhVien> {
     private String[] tenHocPhan, diemHocPhan;
 
     public SinhVien() {
-        mssv = new String();
-        name = new String();
+        mssv = "";
+        name = "";
         dob = new Date();
         soLuongHocPhan = 5;
         tenHocPhan = new String[20];
@@ -20,15 +20,15 @@ public class SinhVien implements Comparable<SinhVien> {
     }
 
     public SinhVien(SinhVien s) {
-        mssv = new String(s.mssv);
-        name = new String(s.name);
+        mssv = s.mssv;
+        name = s.name;
         dob = new Date(s.dob);
         soLuongHocPhan = s.soLuongHocPhan;
         tenHocPhan = new String[20];
         diemHocPhan = new String[20];
         for (int i = 0; i < soLuongHocPhan; i++) {
-            tenHocPhan[i] = new String(s.tenHocPhan[i]);
-            diemHocPhan[i] = new String(s.diemHocPhan[i]);
+            tenHocPhan[i] = s.tenHocPhan[i];
+            diemHocPhan[i] = s.diemHocPhan[i];
         }
 
     }
@@ -113,6 +113,10 @@ public class SinhVien implements Comparable<SinhVien> {
         } else {
             System.out.println("Khong co hoc phan nao de xoa");
         }
+    }
+
+    public int soLuongHocPhan() {
+        return soLuongHocPhan;
     }
 
     @Override

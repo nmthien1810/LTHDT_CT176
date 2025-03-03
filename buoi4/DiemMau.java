@@ -9,7 +9,7 @@ public class DiemMau extends Diem {
 
     public DiemMau() {
         super();
-        mau = new String();
+        mau = "do";
     }
 
     public DiemMau(int x, int y, String mau) {
@@ -31,5 +31,9 @@ public class DiemMau extends Diem {
     public void hienThi() {
         super.hienThi();
         System.out.println("Mau cua diem: " + mau);
+    }
+
+    public String toString() {
+        return super.toString() + " - " + mau;
     }
 }
