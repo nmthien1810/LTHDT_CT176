@@ -23,6 +23,6 @@ public class TheBus {
     }
 
     public void hienThi() {
-        System.out.println(maThe + " - " + ngayPh + " - " + loaiThe + K);
+        System.out.println(maThe + " - " + ngayPh + " - " + loaiThe + K.toString());
     }
 }
