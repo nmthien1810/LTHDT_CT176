@@ -57,7 +57,7 @@ public class SinhVien implements Comparable<SinhVien> {
     }
 
     public String toString() {
-        String s = mssv + "/ " + name + "/ " + dob.toString();;
+        String s = mssv + "/ " + name + "/ " + dob;
             for (int i = 0; i < soLuongHocPhan; i++) {
                 s += "/ " + tenHocPhan[i] + " - " + diemHocPhan[i];
             }
